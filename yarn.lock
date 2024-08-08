@@ -911,32 +911,6 @@ ajv@~8.13.0:
     require-from-string "^2.0.2"
     uri-js "^4.4.1"
 
-animated-scrollcard-ngit@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/animated-scrollcard-ngit/-/animated-scrollcard-ngit-1.0.0.tgz#487877e2e97f69846115725e6eff01ca02f94491"
-  integrity sha512-uXSk8qKBaodTl8TvM7rNElRGK1/bQcajhc3HUmaPd8SqmgAyCYRplrBvc5sQpxsnQ2tmECuPrWuzuLAVDU4l3Q==
-  dependencies:
-    react "^18.3.1"
-    react-dom "^18.3.1"
-
-animated-scrollcard-ngit@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/animated-scrollcard-ngit/-/animated-scrollcard-ngit-1.0.1.tgz#7cec75a84ec540fcd28cd7ff3f6f459f0530c8f2"
-  integrity sha512-GVStlyy0ovmbA5iGAHOXmtKFlejMjSGSprc5QfI4DwngYbCezoUCZYkS6ZzcsOndKHaoD4kC9quk7YFIHf9VxA==
-  dependencies:
-    animated-scrollcard-ngit "^1.0.0"
-    react "^18.3.1"
-    react-dom "^18.3.1"
-
-animated-scrollcard-ngit@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/animated-scrollcard-ngit/-/animated-scrollcard-ngit-1.0.2.tgz#0411dca29fad056dccfb9763603c6fcfc82a7968"
-  integrity sha512-V7Mg2m4/2T1mm5+qBJnfWgwoWKxOv9VbtPwurrNYMqxSvWcD9NgZks2+j7bGkf7x5QbzeyIgVAhg9LZjq/SnUw==
-  dependencies:
-    animated-scrollcard-ngit "^1.0.1"
-    react "^18.3.1"
-    react-dom "^18.3.1"
-
 ansi-regex@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.1.tgz#082cb2c89c9fe8659a311a53bd6a4dc5301db304"

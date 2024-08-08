@@ -1,5 +1,4 @@
 // Entry point for components
+import AnimatedScrollCard from "@/components/AnimatedScrollCard";
 
-import DummyHeader from "@/components/DummyHeader";
-
-export { DummyHeader };
+export { AnimatedScrollCard };

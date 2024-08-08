@@ -1,12 +1,10 @@
-import { DummyHeader } from "animated-scrollcard-ngit";
-
-function App() {
+import AnimatedScrollCard from "./components/AnimatedScrollCard";
+const App = () => {
   return (
-    <>
-      <h1 className="flex justify-center">Hello world</h1>
-      <DummyHeader />
-    </>
+    <div>
+      <AnimatedScrollCard numberOfCards={3} />
+    </div>
   );
-}
+};
 
 export default App;
