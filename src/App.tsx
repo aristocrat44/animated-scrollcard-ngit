@@ -1,10 +1,5 @@
-import AnimatedScrollCard from "./components/AnimatedScrollCard";
 const App = () => {
-  return (
-    <div>
-      <AnimatedScrollCard numberOfCards={3} />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default App;

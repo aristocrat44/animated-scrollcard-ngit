@@ -5,7 +5,8 @@ This is an assignment done by Atish Maharjan for NGIT Solutions
 ## Installation
 
 - Yarn add or npm i `animated-scrollcard-ngit`.
-- Import the <AnimatedScrollCard /> component to your application.
+- Import the <AnimatedScrollCard /> component to your application for normal scrollable component.
+- Import the <AnimatedScrollCardCarousel /> component for animated draggable vertical carousel.
 - In order to import the tailwind CSS properties of the component you can either:
 
   1. `import "/node_modules/animated-scrollcard-ngit/dist/index.css"` into your main file;
