@@ -1,50 +1,18 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an assignment done by Atish Maharjan for NGIT Solutions
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Yarn add or npm i `animated-scrollcard-ngit`.
+- Import the <AnimatedScrollCard /> component to your application.
+- In order to import the tailwind CSS properties of the component you can either:
 
-## Expanding the ESLint configuration
+  1. `import "/node_modules/animated-scrollcard-ngit/dist/index.css"` into your main file;
+  2. OR add the link `<link
+  rel="stylesheet"
+  href="node_modules/animated-scrollcard-ngit/dist/scrollcard.css"
+/>` in index.html file.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- For tailwind css properties to be placed inside the dist folder, the only way is to copy it. Building the application AFTER copying the css file to dist folder; removes the css file. So css file must be copied only after successful build. `prepare` script is configured to do so.
+- By default 20 numbers of cards are rendered. If you want to change, you can passed the desired number into `numberOfCards` props.
