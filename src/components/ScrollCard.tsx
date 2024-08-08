@@ -7,7 +7,7 @@ const ScrollCard = () => {
       <div className="flex justify-center shadow-inner">
         <div
           className={`w-[280px] md:w-[340px] py-[60px] my-[20px] rounded-3xl ${glassCardStyle}`}
-        ></div>
+        />
       </div>
       <div className="w-[230px] md:w-[340px] flex flex-row items-center justify-between">
         <div
