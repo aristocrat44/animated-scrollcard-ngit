@@ -96,3 +96,19 @@ export const products = [
     image: "https://avatar.iran.liara.run/public/12",
   },
 ];
+
+export const adjustedPriceFunc = (price: number, quantity: number) => {
+  return (price * Math.log(quantity + 1)) / Math.log(price + quantity + 1);
+};
+
+export const sortOptions = [
+  { value: "price", label: "Price" },
+  { value: "adjustedPrice", label: "Adjusted Price" },
+  { value: "quantity", label: "Quantity" },
+];
+
+export const sortOrderOptions = [
+  { value: "", label: "Sort Order" },
+  { value: "asc", label: "Ascending" },
+  { value: "desc", label: "Descending" },
+];

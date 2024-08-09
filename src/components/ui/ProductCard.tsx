@@ -1,3 +1,4 @@
+import { adjustedPriceFunc } from "@/lib/constants";
 import React from "react";
 
 interface ProductCardProps {
@@ -16,12 +17,6 @@ const ProductCard = ({
   quantity,
 }: ProductCardProps) => {
   const glassCardStyle = "border-[8px] bg-glass border-glass";
-
-  const adjustedPrice = () => {
-    const adjustedPrice =
-      (price * Math.log(quantity + 1)) / Math.log(price + quantity + 1);
-    return adjustedPrice?.toFixed(2);
-  };
 
   return (
     <div
@@ -51,7 +46,9 @@ const ProductCard = ({
           <hr className="my-1" />
           <div className="flex flex-row justify-between font-semibold text-md mt-2">
             <span>Adjusted Price:</span>
-            <span className="self-end">$ {adjustedPrice()}</span>
+            <span className="self-end">
+              $ {adjustedPriceFunc(price, quantity).toFixed(2)}
+            </span>
           </div>
         </div>
       </div>
