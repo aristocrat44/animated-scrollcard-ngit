@@ -11,21 +11,17 @@ const VerticalCarousel = ({ items }: AllProducts) => {
       orientation="vertical"
       className="w-full flex flex-col justify-center items-center"
     >
-      <CarouselContent className="w-full h-[calc(100vh-60px)]">
+      <CarouselContent className="w-full h-[calc(100vh-60px)] pt-20">
         {items.map((item, index) => {
           const ref = useRef<HTMLDivElement>(null);
           const isIntersecting = useIntersectionObserver(ref, {
             root: null,
             rootMargin: "0px",
-            threshold: 0.5,
+            threshold: 0.8,
           });
 
           return (
-            <CarouselItem
-              key={index}
-              ref={ref}
-              className="w-full pt-20 basis-1/4"
-            >
+            <CarouselItem key={index} ref={ref} className="w-full basis-1/4">
               <animated.div
                 style={{
                   transform: isIntersecting ? "scale(1)" : "scale(0.75)",
