@@ -33,11 +33,7 @@
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
-<<<<<<< HEAD
     "clsx": "^2.1.2",
-=======
-    "clsx": "^2.1.1",
->>>>>>> aec4a71eddd2fc9541dc692d550968b9c7af3231
     "embla-carousel-react": "^8.1.8",
     "lucide-react": "^0.424.0",
     "react": "^18.3.1",
