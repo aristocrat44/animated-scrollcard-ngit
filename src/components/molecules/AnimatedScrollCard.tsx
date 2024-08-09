@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ScrollCard from "./ScrollCard";
+import ScrollCard from "../ui/ScrollCard";
 
 const AnimatedScrollCard = ({
   numberOfCards = 20,

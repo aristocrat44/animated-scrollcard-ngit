@@ -6,20 +6,12 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import ScrollCard from "./ScrollCard";
+import ScrollCard from "../ui/ScrollCard";
 import useIntersectionObserver from "@/hooks/useIntersectionObserver";
+import ProductCard from "../ui/ProductCard";
+import { products } from "@/lib/constants";
 
-const AnimatedScrollCardCarousel = ({
-  numberOfCards = 20,
-}: {
-  numberOfCards?: number;
-}) => {
-  const numToArrayGenerator = () => {
-    return Array.from({ length: numberOfCards }, (_, index) => index + 1);
-  };
-
-  const items = numToArrayGenerator();
-
+const AnimatedScrollCardCarousel = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#FBCB73] via-[#DE2E7B] to-[#733EBB] pt-5 pb-5">
       <div className="h-[calc(100vh-40px)]">
@@ -28,7 +20,7 @@ const AnimatedScrollCardCarousel = ({
           className="w-full flex flex-col justify-center items-center"
         >
           <CarouselContent className="w-full h-[calc(100vh-100px)]">
-            {items.map((index) => {
+            {products.map((item, index) => {
               const ref = useRef<HTMLDivElement>(null);
               const isIntersecting = useIntersectionObserver(ref, {
                 root: null,
@@ -48,7 +40,13 @@ const AnimatedScrollCardCarousel = ({
                       transition: "transform 0.3s",
                     }}
                   >
-                    <ScrollCard />
+                    <ProductCard
+                      img={item.image}
+                      title={item.name}
+                      category={item.category}
+                      price={item.price}
+                      quantity={item.quantity}
+                    />
                   </animated.div>
                 </CarouselItem>
               );
